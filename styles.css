@@ -1,0 +1,382 @@
+/* CSS Reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+ 
+ body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+/* Base Styles */
+
+.body-styles {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background: #fff;
+  color: var(--Grayish-Blue);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.header {
+  background: url('./images/bg-header-desktop.png');
+  background-size: cover;
+  padding-top: 60px;
+}
+
+.header .logo {
+  width: 100px;
+  margin: auto;
+}
+
+/* Hero */
+
+.hero {
+  margin-bottom: 80px;
+}
+
+.hero .hero-header {
+  color: var(--Dark-Grayish-Blue);
+  line-height: 1.8;
+  font-size: 2rem;
+}
+
+.hero .lead {
+  max-width: 550px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Track */
+
+.track .text-sm {
+  max-width: 550px;
+  margin: auto;
+}
+
+.track .container {
+  margin: 0;
+}
+
+.track .track-features {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap: 60px;
+  margin-top: 2.7rem;
+  position: relative;
+  right: 50px;
+}
+
+.track .track-features .track-features-cards {
+  padding-top: 3rem;
+}
+
+.track-features .track-features-cards div {
+  margin-bottom: 30px;
+}
+
+.track .track-features .track-features-cards .text-sm {
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Access */
+
+.access .text-sm {
+  max-width: 550px;
+  margin: auto;
+}
+
+.access img {
+  width: 650px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Workflow */
+
+.workflow-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 5rem;
+}
+
+.workflow-features div img {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+/* Partners */
+
+.partners {
+  margin-bottom: 60px;
+}
+
+.partners .partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.partners .partners-logos img {
+  max-width: 150px;
+  margin-left: 30px;
+}
+
+/* Clipboard */
+.clipboard {
+  margin-bottom: 60px;
+}
+
+.clipboard .text-sm {
+  max-width: 550px;
+  margin: auto;
+}
+
+/* Footer */
+
+.footer {
+  background: hsl(206, 17%, 92%);
+  padding: 1rem 0;
+}
+
+.footer .links a {
+  font-size: 1rem;
+  color: var(--Dark-Grayish-Blue);
+  display: block;
+  margin-bottom: 7px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .logo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .logo img {
+  width: 100px;
+}
+
+.footer .links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .links div:last-of-type a {
+  position: relative;
+  bottom: 1rem;
+}
+
+.footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+
+.footer .icons img {
+  width: 20px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Utility classes */
+
+/* Container */
+.container {
+  max-width: 1100px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 0 10px;
+  border-radius: 100px;
+  border-bottom: 1px solid #333;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-group {
+  margin-top: 45px;
+}
+
+.btn-green {
+  background: var(--Strong-Cyan);
+  box-shadow: 0 3px 10px var(--Strong-Cyan);
+}
+
+.btn-blue {
+  background: var(--Light-Blue);
+  box-shadow: 0 3px 10px var(--Light-Blue);
+}
+
+.btn:active {
+  opacity: 0.7;
+}
+
+/* Texts */
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 1.1rem;
+  padding: 0 15px;
+}
+
+.text-lg {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.text-xl {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+  line-height: 2;
+}
+
+/* Media Query */
+
+@media (max-width: 800px) {
+  .track .track-features {
+    grid-template-columns: 1fr;
+    left: 30px;
+  }
+
+  .track .track-features img {
+    position: relative;
+    right: 35px;
+    padding-left: 2.2rem;
+    padding-right: 1.5rem;
+  }
+
+  .track .track-features .track-features-cards {
+    text-align: center;
+  }
+
+  .track .track-features .track-features-cards div {
+    margin-bottom: 4rem;
+  }
+
+  .workflow-features {
+    flex-direction: column;
+  }
+
+  .workflow-features div img {
+    margin-top: 4rem;
+  }
+
+  .partners .partners-logos {
+    flex-direction: column;
+  }
+
+  .partners .partners-logos img {
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+
+  .footer {
+    padding: 4rem 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+  }
+
+  .footer .logo img {
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .footer .links {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .links div:last-of-type a {
+    bottom: 0;
+  }
+
+  .footer .links div a {
+    margin-bottom: 1.5rem;
+  }
+  .footer .icons {
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  .footer .icons img {
+    margin-right: 3rem;
+  }
+
+  /* Utility classes over ride */
+
+  .btn {
+    display: block;
+    margin: 0 2rem 2rem;
+  }
+}
